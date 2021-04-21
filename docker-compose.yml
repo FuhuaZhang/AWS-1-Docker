@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  blog-api:
+    build: blog-api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./blog-api:/usr/src/app
+  blog-web:
+    build: blog-web
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./blog-web:/usr/src/app
+
