@@ -8,8 +8,8 @@ import { BlogModule } from './blog/blog.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'host.docker.internal',
-      port: 3307,
+      host: 'aws-1-docker_blog-db_1',
+      port: 3306,
       username: 'root',
       password: 'password',
       database: 'blog',

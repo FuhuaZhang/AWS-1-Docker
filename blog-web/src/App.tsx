@@ -8,7 +8,7 @@ function App() {
     useEffect(() => {
         const getContent = async () => {
             const response = await axios.get(
-                'http://localhost:3000'
+                'http://aws-1-docker_blog-api_1:3000/blogs/1'
             );
             setContent(response.data);
         };
